@@ -1,4 +1,4 @@
-import * as borsh from "@coral-xyz/borsh";
+import * as borsh from "@project-serum/borsh";
 
 export class Movie {
   title: string;
@@ -7,8 +7,8 @@ export class Movie {
 
   constructor(title: string, rating: number, description: string) {
     this.title = title;
-    this.description = description;
     this.rating = rating;
+    this.description = description;
   }
 
   static mocks: Movie[] = [
